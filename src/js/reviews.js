@@ -3,6 +3,9 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import Swiper from 'swiper';
+import 'swiper/css/bundle';
+
 const domElements = {
   reviewsSection: document.querySelector('.reviews-section'),
   cardsUl: document.querySelector('.reviews-cards'),
@@ -13,7 +16,6 @@ const { cardsUl, leftArrow, rightArrow, reviewsSection } = domElements;
 
 export async function downloadCommentsFromServer() {
   cardsUl.innerHTML = '';
-  leftArrow.setAttribute('disabled', '');
 
   try {
     const responseData = (
@@ -41,5 +43,14 @@ export async function downloadCommentsFromServer() {
       message: `${err}`,
     });
   } finally {
+    // const swiper = new Swiper('.swiper-container', {
+    //   direction: 'horizontal',
+    //   loop: false,
+    //   slidesPerView: 1,
+    //   navigation: {
+    //     nextEl: '.right-arrow',
+    //     prevEl: '.left-arrow',
+    //   },
+    // });
   }
 }
