@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  padding: 32px;
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
@@ -132,23 +131,17 @@ button.arrow:disabled svg path {
 }
 
 /*adaptation*/
-@media (min-width: 600px) and (max-width: 768px) {
-  .reviews-cards-li {
-    width: calc(50% - 8px);
-    min-width: calc(50% - 8px);
-  }
-}
 
 @media (min-width: 768px) {
   .reviews-cards-li {
-    width: calc(33% - 9px);
-    min-width: calc(33% - 9px);
+    width: calc(50% - 10px);
+    min-width: calc(50% - 10px);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .reviews-cards-li {
-    width: calc(25% - 10.67px);
-    min-width: calc(25% - 10.67px);
+    width: calc(25% - 12px);
+    min-width: calc(25% - 12px);
   }
 }
