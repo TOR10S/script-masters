@@ -16,4 +16,4 @@ import * as reviews from './js/reviews';
 
 reviews.downloadCommentsFromServer();
 
-/* test upload 4 */
+/* test upload 5 */
