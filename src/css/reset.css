@@ -8,7 +8,7 @@
 body {
   font-family: 'InterTight', sans-serif;
   margin: 0;
-  background-color: #1C1D20;
+  background-color: #1c1d20;
 }
 
 h1,
@@ -70,42 +70,42 @@ footer {
   padding-top: 32px;
 }
 
-@media screen and (min-width:320px) and (max-width:375px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
   .container {
     max-width: 100%;
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
-  
+
   section {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  
+
   footer {
     padding-bottom: 169px;
     padding-top: 40px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
     padding-right: 32px;
     padding-left: 32px;
   }
-  
+
   section {
     padding-top: 82px;
     padding-bottom: 82px;
   }
-  
+
   footer {
     padding-bottom: 169px;
     padding-top: 40px;

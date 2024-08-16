@@ -4,8 +4,8 @@ import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper';
 import 'swiper/css';
 
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 import * as aboutMe from './js/about-me';
 import * as faq from './js/faq';
