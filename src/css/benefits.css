@@ -1,0 +1,107 @@
+.benefits {
+  background-color: #1c1d20;
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.benefits-title {
+  color: rgba(250, 250, 250, 0.4);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+.benefits-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: calc(100% - 24) / 2;
+  gap: 16px;
+}
+
+.benefits-list-item {
+  max-width: 344px;
+  border-radius: 20px;
+  padding: 24px;
+  background-color: #242527;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.benefits-icon {
+}
+.benefits-item-icon-container {
+  padding: 12px;
+  background-color: #ed3b44;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+.benefits-item-title {
+  color: #fafafa;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+.benefits-item-text {
+  color: rgba(250, 250, 250, 0.6);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+
+.benefits-btn {
+  margin-right: auto;
+  padding: 18px 36px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  color: #fafafa;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefits-btn:hover {
+  border: 1px solid rgba(250, 250, 250, 0.6);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .benefits-list-container {
+    gap: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .benefits-list-container {
+    max-width: 680px;
+  }
+  .benefits-list-item {
+    max-width: 332px;
+  }
+}
