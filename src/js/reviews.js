@@ -40,24 +40,24 @@ export async function downloadCommentsFromServer() {
       title: 'Reviews error',
       message: `${err}`,
     });
-  } finally {
-    new Swiper('.swiper', {
-      slidesPerView: 1,
-      navigation: {
-        nextEl: '.right-arrow',
-        prevEl: '.left-arrow',
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1440: {
-          slidesPerView: 4,
-        },
-      },
-    });
   }
 }
+
+new Swiper('.swiper', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.right-arrow',
+    prevEl: '.left-arrow',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 4,
+    },
+  },
+});
