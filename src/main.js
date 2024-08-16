@@ -15,3 +15,5 @@ import * as projects from './js/projects';
 import * as reviews from './js/reviews';
 
 reviews.downloadCommentsFromServer();
+
+/* test upload */
