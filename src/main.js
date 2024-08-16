@@ -13,5 +13,3 @@ import * as footer from './js/footer';
 import * as header from './js/header';
 import * as projects from './js/projects';
 import * as reviews from './js/reviews';
-
-reviews.downloadCommentsFromServer();
