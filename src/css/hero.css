@@ -1,0 +1,56 @@
+/* --------------hero------------------ */
+
+.hero {
+  background-image: url(../img/hero/hero-background.jpg);
+  width: 100%;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+  width: 1084px;
+  height: 270px;
+}
+
+.hero-list {
+}
+
+.hero-item {
+}
+
+.hero-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.hero-link-mail {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero {
+    background-image: url(../img/hero/hero-background-tablet.jpg);
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-image: url(../img/hero/hero-background-desktop.png);
+    width: 100%;
+  }
+}
+
+/* --------------hero------------------ */
