@@ -9,7 +9,7 @@ const form = document.querySelector('.work-together__form');
 const message = document.getElementById('emailSuccessMessage');
 
 const charCount = document.getElementById('charCount');
-
+const btn = document.querySelector('.work-together__button');
 
 
 emailInput.addEventListener('blur', validateEmail);
@@ -23,6 +23,9 @@ commentsInput.addEventListener('input', () => {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
+
+
+
   axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
   axios.post('/requests', {
@@ -47,30 +50,30 @@ form.addEventListener('submit', (event) => {
     .finally(() => {
       form.reset();
       charCount.textContent = '0';
+      emailInput.classList.remove('error');
+      emailInput.classList.remove('success');
+      message.textContent = '';
+      btn.disabled = true;
     })
 
 })
 
 
 
-
-
-
-
-
-
-
-
 function validateEmail() {
-    if (emailInput.checkValidity()) {
+  if (emailInput.checkValidity() && emailInput.value.trim() !== "") {
       emailInput.classList.remove('error');
       emailInput.classList.add('success');
       message.textContent = 'Success!';
-      message.style.color = '#3cbc81';
-    } else {
+    message.style.color = '#3cbc81';
+    btn.disabled = false;
+    }  else  {
       emailInput.classList.remove('success');
       emailInput.classList.add('error');
       message.textContent = 'Invalid email, try again';
       message.style.color = '#e74a3b';
+
     }
 }
+
+
