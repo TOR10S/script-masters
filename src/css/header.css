@@ -1,14 +1,18 @@
 .header {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     90deg,
     rgba(237, 59, 68, 1) 0%,
     rgba(105, 41, 45, 1) 50%,
     rgba(28, 29, 32, 1) 100%
-  );
+  ); */
   align-items: flex-start;
-  height: 100dvh;
+  /* height: 100dvh; */
 }
 .header-logo {
   display: flex;
@@ -29,7 +33,7 @@
   background-color: transparent;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1, 0225;
+  line-height: 1.0225;
   letter-spacing: -0.32px;
   text-decoration: underline;
 }
@@ -128,9 +132,11 @@
     top: 100%;
     background-image: none;
   }
+  .header-menu-items {
+    text-decoration: none;
+  }
   .header-lists {
     gap: 5px;
-    text-decoration: none;
   }
   .mobile-link {
     display: none;
