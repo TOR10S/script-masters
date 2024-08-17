@@ -58,7 +58,7 @@ margin-bottom: 32px;
     display: inline-block;
     border-radius: 60px;
     color: #FAFAFA;
-background: #ED3B44;
+background-color: #ED3B44;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -66,6 +66,11 @@ line-height: normal;
 letter-spacing: -0.32px;
 padding: 13px 32px;
 border: none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-btn:hover, .project-btn:active {
+    background-color: #E0373F;
 }
 
 .project-img-wraper {
