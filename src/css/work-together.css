@@ -118,8 +118,6 @@
 .work-together__input:not(:placeholder-shown).error + .work-together__message {
   display: block;
 }
-.work-together__input.error + .work-together__message {
-}
 
 .work-together__button {
   margin-top: 32px;
