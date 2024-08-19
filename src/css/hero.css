@@ -63,10 +63,14 @@
 @media screen and (min-width:320px) and (max-width:375px) {
     .hero-title {
         width: 100%;
+        margin-bottom: 170px;
     }
 
     .hero-list {
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
+        justify-content: center;
     }
 }
 
