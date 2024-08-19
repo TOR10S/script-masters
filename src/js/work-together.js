@@ -14,8 +14,8 @@ const closeModalBtn = document.querySelector('.close-btn');
 const overlay = document.querySelector('.modal-overlay');
 
 const closeModal = () => {
-  modal.style.display = 'none';
-  overlay.style.display = 'none';
+  modal.classList.add("is-hiden");
+  overlay.classList.add("is-hiden");
 };
 
 closeModalBtn.addEventListener('click', closeModal);
