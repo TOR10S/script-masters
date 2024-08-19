@@ -10,6 +10,8 @@ new Accordion('.about-info-list', {elementClass: 'info-item',
     panelClass: 'info-item-panel',
 })
 
+const nextBtn = document.querySelector('.about-button-next');
+
 const swiperAbout = new Swiper('.tec-swiper-container', {
   spaceBetween: 0,
   loop: true,
@@ -32,6 +34,5 @@ const swiperAbout = new Swiper('.tec-swiper-container', {
       },
 });
 
-swiperAbout.isLocked = false;
 
   
