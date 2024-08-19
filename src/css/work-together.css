@@ -139,12 +139,12 @@
 .work-together__button:hover {
   background-color: #e0373f;
 }
-/* .work-together__button:disabled {
+.work-together__button:disabled {
   cursor: no-drop;
 }
 .work-together__button:not(:disabled) {
   cursor: pointer;
-} */
+}
 .work-together__button:not(:disabled):active {
   transform: scale(0.95);
 }

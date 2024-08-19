@@ -13,6 +13,7 @@ const btn = document.querySelector('.work-together__button');
 
 
 emailInput.addEventListener('blur', validateEmail);
+commentsInput.addEventListener('input', validateEmail);
 
 commentsInput.addEventListener('input', () => {
   charCount.style.display = 'block';
@@ -23,8 +24,6 @@ commentsInput.addEventListener('input', () => {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-
-
 
   axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
@@ -66,14 +65,17 @@ function validateEmail() {
       emailInput.classList.add('success');
       message.textContent = 'Success!';
     message.style.color = '#3cbc81';
-    btn.disabled = false;
+    // btn.disabled = false;
     }  else  {
       emailInput.classList.remove('success');
       emailInput.classList.add('error');
       message.textContent = 'Invalid email, try again';
-      message.style.color = '#e74a3b';
+    message.style.color = '#e74a3b';
 
-    }
+  }
+  const isEmailValid = emailInput.checkValidity() && emailInput.value.trim() !== "";
+  const isCommentFilled = commentsInput.value.trim() !== "";
+  btn.disabled = !(isEmailValid && isCommentFilled);
 }
 
 
