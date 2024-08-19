@@ -1,0 +1,88 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.container-covers {
+    position: relative;
+    width: 100%;
+    height: 508px;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background.png);
+}
+
+.marquee {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.cover-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    transform: rotate(16deg);
+}
+
+.cover-item {
+  width: 282px;
+  height: 162px;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: marquee 20s linear infinite;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container-covers {
+    height: 960px;
+    background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-tablet.png);
+  }
+
+  .cover-item {
+    width: 544px;
+    height: 314px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-covers {
+    height: 960px;
+    background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-desktop.png);
+  }
+
+  .cover-item {
+    width: 544px;
+    height: 314px;
+    margin-bottom: 40px;
+    margin-right: 55px;
+  }
+}
