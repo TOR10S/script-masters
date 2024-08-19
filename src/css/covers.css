@@ -14,7 +14,7 @@
 .container-covers {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 508px;
     overflow: hidden;
     background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background.png);
 }
@@ -61,6 +61,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .container-covers {
+    height: 960px;
     background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-tablet.png);
   }
 
@@ -74,6 +75,7 @@
 
 @media screen and (min-width: 1440px) {
   .container-covers {
+    height: 960px;
     background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-desktop.png);
   }
 
