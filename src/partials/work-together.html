@@ -1,24 +1,53 @@
+<footer>
+  <section class="work-together" id="work-together">
+    <div class="container">
+
+      <div class="work-together__title-wrap">
 
 
+          <img class="work-together__img"
+               src="./img/footer/user-avatar@1x.jpg"
+               srcset="./img/footer/user-avatar@1x.jpg 1x,
+                       ./img/footer/user-avatar@2x.jpg 2x,
+                       ./img/footer/user-avatar@3x.jpg 3x"
+               alt="user-avatar">
+
+        <h2 class="work-together__title">Let’s <span>work</span> </h2>
+      </div>
+
+      <h3 class="work-together__title together">together</h3>
 
 
+      <form class="work-together__form">
+        <div>
+          <input class="work-together__input" type="email" name="email" id="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required placeholder="clients@gmail.com">
+          <span class="work-together__message" id="emailSuccessMessage"></span>
+        </div>
 
+        <div>
+          <input class="work-together__input comments"  type="text" placeholder="comments" required >
+          <p id="charCount">0</p>
+        </div>
 
+        <button class="work-together__button" type="submit" disabled>Send</button>
 
+      </form>
 
+      <div class="work-together__wrap">
+        <a class="work-together__link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+        <a class="work-together__link" href="tel:+380111111111">+380 11 1111 11 11</a>
+      </div>
 
+    </div>
+  </section>
+</footer>
 
 <!--------- modal -------->
-<div class="modal-overlay"></div>
+<div class="modal-overlay is-hiden"></div>
 
-<div class="modal">
+<div class="modal is-hiden">
   <button class="close-btn">
-    <img
-      src="../img/icons.svg#icon-close"
-      alt="Close button"
-      width="22"
-      height="22"
-    />
+    <svg width="22" height="22"><use href="./img/icons.svg#icon-close"></use></svg>
   </button>
   <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
   <p class="modal-text">
