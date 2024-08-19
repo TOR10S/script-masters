@@ -1,3 +1,79 @@
+/* modal */
+.is-hiden {
+  display: none;
+}
+/* modal mobile */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 343px;
+  height: 276px;
+  background-color: #1c1d20;
+  box-sizing: border-box;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  gap: 64px;
+  z-index: 1000;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #fafafa;
+}
+
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 16, 0.6);
+  z-index: 999;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.open-modal-btn {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .modal {
+    padding: 64px;
+    width: 492px;
+    height: 246px;
+  }
+}
+
 .work-together {
   background-color: #1c1d20;
   background-image: url(../img/footer/footer.jpg);
@@ -238,6 +314,12 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .modal {
+    padding: 64px;
+    width: 492px;
+    height: 246px;
+  }
+
   .work-together {
     padding: 80px 201px 169px 196px;
     background-image: url(../img/footer/footer-desktop.jpg);
