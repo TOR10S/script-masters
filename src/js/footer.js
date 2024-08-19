@@ -1,4 +1,3 @@
-// const { default: axios } = require("axios");
 import axios from 'axios';
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
@@ -12,19 +11,35 @@ const charCount = document.getElementById('charCount');
 const btn = document.querySelector('.work-together__button');
 
 
+// modal
+const overlay = document.querySelector('.modal-overlay');
+const modal = document.querySelector('.modal');
+const closeModalBtn = document.querySelector('.close-btn');
+const modalTitle = document.querySelector('.modal-title');
+const modalText = document.querySelector('.modal-text');
+
 emailInput.addEventListener('blur', validateEmail);
 
+
 commentsInput.addEventListener('input', () => {
-  charCount.style.display = 'block';
-    const currentLength = commentsInput.value.length;
-    charCount.textContent = `${currentLength}`;
+  const currentLength = commentsInput.value.length;
+
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    charCount.style.display = 'block';
+  }
+
+  charCount.textContent = `${currentLength}`;
+
+  validateEmail();
 });
 
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
+  charCount.style.display = 'none';
 
-
+  modal.classList.remove('is-hiden');
+  overlay.classList.remove('is-hiden');
 
   axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
@@ -33,7 +48,8 @@ form.addEventListener('submit', (event) => {
     comment: commentsInput.value.trim()
   })
     .then(response => {
-    console.log(response.data);
+      modalTitle.textContent = response.data.title;
+      modalText.textContent = response.data.message;
     })
     .catch((error) => {
       iziToast.show({
@@ -62,18 +78,42 @@ form.addEventListener('submit', (event) => {
 
 function validateEmail() {
   if (emailInput.checkValidity() && emailInput.value.trim() !== "") {
-      emailInput.classList.remove('error');
-      emailInput.classList.add('success');
-      message.textContent = 'Success!';
+    emailInput.classList.remove('error');
+    emailInput.classList.add('success');
+    message.textContent = 'Success!';
     message.style.color = '#3cbc81';
-    btn.disabled = false;
-    }  else  {
-      emailInput.classList.remove('success');
-      emailInput.classList.add('error');
-      message.textContent = 'Invalid email, try again';
-      message.style.color = '#e74a3b';
 
-    }
+    }  else  {
+    emailInput.classList.remove('success');
+    emailInput.classList.add('error');
+    message.textContent = 'Invalid email, try again';
+    message.style.color = '#e74a3b';
+  }
+
+    const isEmailValid = emailInput.checkValidity() && emailInput.value.trim() !== "";
+    const isCommentFilled = commentsInput.value.trim() !== "";
+    btn.disabled = !(isEmailValid && isCommentFilled);
 }
 
+
+
+/* modal */
+btn.addEventListener('click', () => {
+  modal.classList.remove('.is-hiden')
+})
+
+const closeModal = () => {
+  modal.classList.add("is-hiden");
+  overlay.classList.add("is-hiden");
+};
+
+closeModalBtn.addEventListener('click', closeModal);
+
+overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+});
 
