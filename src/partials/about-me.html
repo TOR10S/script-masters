@@ -1,4 +1,4 @@
-<section id="about" class="about-section">
+<section id="about-me" class="about-section">
     <div class="about-container container">
         <h2 class="about-title visually-hidden">About me</h2>
     <div class="about-first-wrapper">
@@ -13,20 +13,20 @@
                   media="(min-width: 1440px)"
                 />
                 <source
-                  srcset="../img/about-me/about-me-tablet-1x.png 1x,
-                  ../img/about-me/about-me-tablet-2x.png 2x
+                  srcset="./img/about-me/about-me-tablet-1x.png 1x,
+                  ./img/about-me/about-me-tablet-2x.png 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="../img/about-me/about-me-1x.png 1x,
-                  ../img/about-me/about-me-1x.png 2x
+                  srcset="./img/about-me/about-me-1x.png 1x,
+                  ./img/about-me/about-me-1x.png 2x
                   "
                   media="(max-width: 767px)"
                 />
     
                 <img
-                  src="../img/about-me/about-me-1x.png"
+                  src="./img/about-me/about-me-1x.png"
                   alt="Lloyd Jefferson photo"
                 />
               </picture>
@@ -37,7 +37,7 @@
                     <h3 class="info-item-title "><button type="button" class="info-item-btn">
                         About me
                         <span class="info-icon-wrapper">
-                            <svg class="info-icon" width="12" height="12"><use href="../img/icons.svg#icon-arrow-down"></use>
+                            <svg class="info-icon" width="12" height="12"><use href="./img/icons.svg#icon-arrow-down"></use>
                             </svg>
                         </span>
                     </button></h3>
@@ -50,7 +50,7 @@
         <li class="info-item">
                 <h3 class="info-item-title"><button class="info-item-btn">
                     rOLE<span class="info-icon-wrapper">
-                        <svg class="info-icon" width="12" height="12"><use href="../img/icons.svg#icon-arrow-down"></use>
+                        <svg class="info-icon" width="12" height="12"><use href="./img/icons.svg#icon-arrow-down"></use>
                         </svg>
                     </span>
                 </button></h3>
@@ -64,7 +64,7 @@
         <li class="info-item">
                 <h3 class="info-item-title"><button class="info-item-btn">
                     eDUCATION<span class="info-icon-wrapper">
-                            <svg class="info-icon" width="12" height="12"><use href="../img/icons.svg#icon-arrow-down"></use>
+                            <svg class="info-icon" width="12" height="12"><use href="./img/icons.svg#icon-arrow-down"></use>
                             </svg>
                         </span>
                 </button></h3>
@@ -77,24 +77,23 @@
             <hr class="info-items-divider">
         </li>
     </ul>
-
-        <div class="tec-swiper-container">
-            <div class="swiper-wrapper tec-list">
-              <!-- Slides -->
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">HTML/CSS</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">JavaScript</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">React</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">Node.js</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">React Native</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">Soft skills</div></div>
-            </div>
-         <div class="tec-navigation">
-            <button class="about-button-next arrow-btn-next" type="button">
-                <svg class="tec-swipe-icon" width="28" height="28">
+<div class="tec">
+    <div class="swiper tec-swiper-container">
+        <ul class="swiper-wrapper tec-list">
+            <li class="swiper-slide tec-item">HTML/CSS</li>
+            <li class="swiper-slide tec-item">JavaScript</li>
+            <li class="swiper-slide tec-item">React</li>
+            <li class="swiper-slide tec-item">Node.js</li>
+            <li class="swiper-slide tec-item">React Native</li>
+            <li class="swiper-slide tec-item">Soft skills</li>
+        </ul>  
+    </div>
+    <div class="tec-navigation">
+        <button class="about-button-next" type="button">
+            <svg class="tec-swipe-icon" width="28" height="28">
                 <use href="../img/icons.svg#icon-arrow-narrow-right1"></use>
-              </svg>
-            </button>
-        </div>    
-        </div>
-        
+            </svg>
+        </button>
+    </div>
+</div>
 </section>
