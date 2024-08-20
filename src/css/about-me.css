@@ -1,4 +1,9 @@
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .about-container {
     margin: auto;
 }
@@ -251,6 +256,11 @@ margin-bottom: 32px;
         height: 700px;
     }
 
+    .about-picture {
+        width: 704px;
+        height: 700px;
+    }
+
     .about-info-list {
         gap: 32px;
         margin-bottom: 64px;
@@ -324,6 +334,10 @@ margin-bottom: 32px;
         width: 680px;
         height: 700px;
     }
+    .about-picture {
+        width: 704px;
+        height: 700px;
+    }
 
     .about-info-list {
         margin-bottom: 96px;
@@ -344,10 +358,6 @@ margin-bottom: 32px;
 
 
     .tec-navigation {
-        /* position: inherit;
-        width: 40px;
-        height: 40px; */
-        /* top: 0; */
         right: -145px;
     }
 
