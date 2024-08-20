@@ -5,6 +5,7 @@
     background-image: url(../img/hero/hero-background.png);
     background-repeat: repeat-y;
     background-position: left;
+    background-size: contain;
 }
 
 .container-hero {

@@ -38,7 +38,6 @@ html {
   font-weight: 500;
   line-height: 1.0225;
   letter-spacing: -0.32px;
-  text-decoration: underline;
 }
 
 .header-menu-items {
@@ -59,11 +58,12 @@ html {
 .header-link {
   color: #fafafa;
   font-size: 16px;
-  line-height: 1, 21;
+  line-height: 1.21;
   letter-spacing: -0.32px;
   padding: 14px 31px;
   background-color: #ed3b44;
   border-radius: 60px;
+  margin-bottom: 54px;
 }
 .header-link:hover {
   background: #e0373f;
@@ -103,6 +103,9 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  z-index: 1000;
+  height: 100%;
+  background-repeat: repeat-y;
 }
 
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -136,7 +139,7 @@ html {
 
 @media (min-width: 768px) {
   .desktop-menu-label {
-    display: unset;
+    display: block;
   }
   .modal-window {
     position: absolute;
@@ -163,4 +166,22 @@ html {
   .header-link-desctop {
     display: initial;
   }
+
+  .header-menu-btn {
+    margin-bottom: 8px;
+  }
+
+
+  .modal-header{
+    display: none;
+  }
+}
+
+.header-menu-btn::after {
+  content: "";
+    width: 40px;
+    position: absolute;
+    left: 6px;
+    height: 2px;
+    background-color: #FAFAFA;
 }
