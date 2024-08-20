@@ -99,7 +99,7 @@
 
 .work-together {
   padding: 0;
-  background-image: url(../img/footer/footer.jpg);
+  background-image: url(../img/footer/footer.webp);
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -296,7 +296,7 @@
     padding-top: 80px;
   }
   .work-together {
-    background-image: url(../img/footer/footer-tablet.jpg);
+    background-image: url(../img/footer/footer-tablet.webp);
   }
   .work-together__title {
     font-size: 64px;
@@ -347,7 +347,7 @@
 
   .work-together {
     padding: 0 132px;
-    background-image: url(../img/footer/footer-desktop.jpg);
+    background-image: url(../img/footer/footer-desktop.webp);
   }
 
   .work-together__input {
