@@ -1,16 +1,18 @@
-<footer>
-  <section class="work-together" id="work-together">
+<footer class="work-together" id="work-together">
     <div class="container">
 
       <div class="work-together__title-wrap">
 
+        <picture>
+          <source srcset="./img/footer/user-avatar@1x.webp 1x,
+            ./img/footer/user-avatar@2x.webp 2x,
+            ./img/footer/user-avatar@3x.webp 3x"  type="image/webp" />
+          <source srcset="./img/footer/user-avatar@1x.jpg 1x,
+                       ./img/footer/user-avatar@2x.jpg 2x,
+                       ./img/footer/user-avatar@3x.jpg 3x"  type="image/jpeg" />
+          <img class="work-together__img" loading="lazy" src="./img/footer/user-avatar@1x.webp" alt="user-avatar" />
+        </picture>
 
-          <img class="work-together__img" loading="lazy"
-               src="./img/footer/user-avatar@1x.webp"
-               srcset="./img/footer/user-avatar@1x.webp 1x,
-                       ./img/footer/user-avatar@2x.webp 2x,
-                       ./img/footer/user-avatar@3x.webp 3x"
-               alt="user-avatar">
 
         <h2 class="work-together__title">Let’s <span>work</span> </h2>
       </div>
@@ -39,7 +41,6 @@
       </div>
 
     </div>
-  </section>
 </footer>
 
 <!--------- modal -------->
