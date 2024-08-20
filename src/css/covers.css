@@ -59,6 +59,12 @@
     }
 }
 
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .container-covers {
+    background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-2x.png);
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .container-covers {
     background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-tablet.png);
@@ -71,6 +77,13 @@
     margin-bottom: 30px;
     margin-right: 50px;
   }
+
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .container-covers {
+      background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-tablet-2x.png);
+    }
+  }
+  
 }
 
 @media screen and (min-width: 1440px) {
@@ -84,5 +97,11 @@
     height: 314px;
     margin-bottom: 40px;
     margin-right: 55px;
+  }
+
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .container-covers {
+      background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-desktop-2x.png);
+    }
   }
 }

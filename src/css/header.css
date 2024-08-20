@@ -105,6 +105,12 @@ html {
   padding: 10px;
 }
 
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .modal-window {
+    background-image: url(../img/header/modal-background-2x.jpg);
+  }
+}
+
 .modal-header {
   width: 100%;
   display: flex;
