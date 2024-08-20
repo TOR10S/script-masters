@@ -66,8 +66,7 @@ section {
 }
 
 footer {
-  padding-bottom: 32px;
-  padding-top: 32px;
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
