@@ -98,7 +98,7 @@
 }
 
 .work-together {
-  background-color: #1c1d20;
+  padding: 0;
   background-image: url(../img/footer/footer.jpg);
   background-position: right;
   background-repeat: no-repeat;
@@ -136,7 +136,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  gap: 16px;
   margin-bottom: 64px;
 }
 .work-together__input {
@@ -148,7 +149,7 @@
 
   width: 100%;
   padding: 0 0 20px 0;
-  margin-bottom: 16px;
+
   display: block;
 
   font-family: 'Inter Tight', sans-serif;
@@ -219,8 +220,8 @@
 }
 
 .work-together__button {
-  margin-top: 32px;
-  width: 100px;
+  margin-top: 16px;
+  max-width: 100px;
   padding: 40px 32px 41px;
 
   border: none;
@@ -291,9 +292,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  footer {
+    padding-top: 80px;
+  }
   .work-together {
     background-image: url(../img/footer/footer-tablet.jpg);
-    padding: 80px 32px 69px;
   }
   .work-together__title {
     font-size: 64px;
@@ -310,7 +313,6 @@
     margin-bottom: 18px;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
     gap: 32px;
   }
   .work-together__input {
@@ -323,7 +325,7 @@
     top: 134%;
   }
   .work-together__button {
-    width: 150px;
+    max-width: 150px;
     margin: 0;
     padding: 65px 57px 66px;
   }
@@ -344,29 +346,16 @@
   }
 
   .work-together {
-    padding: 80px 201px 169px 196px;
+    padding: 0 132px;
     background-image: url(../img/footer/footer-desktop.jpg);
-  }
-
-  .work-together__form {
-    width: 100%;
-    align-items: center;
-    gap: 32px;
-    /* justify-content: space-between; */
   }
 
   .work-together__input {
     margin: 0;
     width: 390px;
-    flex-shrink: 0;
-    /* flex-grow: 1; Дозволяє інпутам розширюватись і займати доступний простір */
   }
 
   .work-together__button {
-    padding: 65px 57px 66px;
     margin-left: 54px;
-  }
-  .work-together__button {
-    flex-shrink: 0; /* Зменшення розміру кнопки при недостатньому місці */
   }
 }
