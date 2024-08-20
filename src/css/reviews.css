@@ -124,6 +124,22 @@ button.arrow:disabled svg path {
 
 /*adaptation*/
 
+@media (min-width: 320px) and (max-width: 360px) {
+  .reviews-cards-li {
+    max-width: 330px;
+  }
+  .reviews-cards {
+    gap: 0px;
+  }
+}
+@media (min-width: 360px) and (max-width: 375px) {
+  .reviews-cards-li {
+    max-width: 350px;
+  }
+  .reviews-cards {
+    gap: 0px;
+  }
+}
 @media (min-width: 768px) {
   .reviews-cards-li {
     max-width: 335px;
