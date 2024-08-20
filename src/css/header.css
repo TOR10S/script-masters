@@ -175,13 +175,14 @@ html {
   .modal-header{
     display: none;
   }
+
+  .header-menu-btn::after {
+    content: "";
+      width: 40px;
+      position: absolute;
+      left: 6px;
+      height: 2px;
+      background-color: #FAFAFA;
+  }
 }
 
-.header-menu-btn::after {
-  content: "";
-    width: 40px;
-    position: absolute;
-    left: 6px;
-    height: 2px;
-    background-color: #FAFAFA;
-}
