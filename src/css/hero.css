@@ -74,8 +74,7 @@
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1439px) {
-
+@media screen and (min-width: 768px) and (max-width: 1439px) {
     .container-hero {
         background-image: url(../img/hero/hero-background-tablet.png);
     }
@@ -109,7 +108,7 @@
     }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
     .container-hero {
         background-image: url(../img/hero/hero-background-desktop.png);
         align-items: center;

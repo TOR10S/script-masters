@@ -87,7 +87,7 @@
   border: 1px solid rgba(250, 250, 250, 0.6);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) {
   .benefits-list-container {
     gap: 64px;
   }

@@ -43,7 +43,7 @@ export async function downloadCommentsFromServer() {
   }
 }
 
-new Swiper('.swiper', {
+new Swiper('.swiper-reviews', {
   slidesPerView: 1,
   navigation: {
     nextEl: '.right-arrow',
