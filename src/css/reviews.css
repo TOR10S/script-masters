@@ -106,7 +106,8 @@ button.arrow:disabled svg path {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .not-found-message {
