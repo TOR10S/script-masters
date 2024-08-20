@@ -49,15 +49,19 @@ new Swiper('.swiper-reviews', {
     nextEl: '.right-arrow',
     prevEl: '.left-arrow',
   },
+  spaceBetween: 20,
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 9,
     },
     768: {
       slidesPerView: 2,
+      spaceBetween: 14,
     },
     1440: {
       slidesPerView: 4,
+      spaceBetween: 21,
     },
   },
 });

@@ -27,14 +27,11 @@
 }
 
 .reviews-cards {
-  gap: 18px;
   max-width: 100%;
   padding: 0;
   margin: 0;
 }
 .reviews-cards-li {
-  flex: 0 0 auto;
-  max-width: 326px;
   min-height: 300px;
   padding: 32px 24px;
   border-radius: 20px;
@@ -103,7 +100,6 @@ button.arrow:disabled {
 button.arrow:disabled svg path {
   stroke: #aaaaaa;
 }
-
 /*Not found block*/
 .not-found-div {
   display: flex;
@@ -120,34 +116,4 @@ button.arrow:disabled svg path {
   margin: 0;
   padding: 20px;
   line-height: 1.5;
-}
-
-/*adaptation*/
-
-@media (min-width: 320px) and (max-width: 360px) {
-  .reviews-cards-li {
-    max-width: 330px;
-  }
-  .reviews-cards {
-    gap: 0px;
-  }
-}
-@media (min-width: 360px) and (max-width: 375px) {
-  .reviews-cards-li {
-    max-width: 350px;
-  }
-  .reviews-cards {
-    gap: 0px;
-  }
-}
-@media (min-width: 768px) {
-  .reviews-cards-li {
-    max-width: 335px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .reviews-cards-li {
-    max-width: 326px;
-  }
 }
