@@ -76,7 +76,7 @@
 @media screen and (min-width: 1440px) {
   .container-covers {
     height: 960px;
-    background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-desktop.png);
+    background-image: linear-gradient(rgba(217, 217, 217, 0.04), rgba(217, 217, 217, 0.04)), url(../img/covers/covers-background-desktop.jpg);
   }
 
   .cover-item {
