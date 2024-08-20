@@ -98,7 +98,6 @@
 }
 
 .work-together {
-  padding: 0;
   background-image: url(../img/footer/footer.webp);
   background-position: right;
   background-repeat: no-repeat;
@@ -356,6 +355,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  footer {
+    padding-left: 132px;
+    padding-right: 132px;
+  }
   .modal {
     padding: 64px;
     width: 492px;
@@ -363,7 +366,6 @@
   }
 
   .work-together {
-    padding: 0 132px;
     background-image: url(../img/footer/footer-desktop.jpg);
   }
 
