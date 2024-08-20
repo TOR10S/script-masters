@@ -98,10 +98,18 @@
 }
 
 .work-together {
-  background-color: #1c1d20;
-  background-image: url(../img/footer/footer.jpg);
+  background-image: url(../img/footer/footer.webp);
   background-position: right;
   background-repeat: no-repeat;
+}
+
+@supports (background-image: image-set(url('image.webp') 1x)) {
+  .work-together {
+    background-image: image-set(
+      url(../img/footer/footer.webp) type('image/webp'),
+      url(../img/footer/footer.jpg) type('image/jpeg')
+    );
+  }
 }
 .work-together__title-wrap {
   display: flex;
@@ -136,7 +144,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  gap: 16px;
   margin-bottom: 64px;
 }
 .work-together__input {
@@ -148,7 +157,7 @@
 
   width: 100%;
   padding: 0 0 20px 0;
-  margin-bottom: 16px;
+
   display: block;
 
   font-family: 'Inter Tight', sans-serif;
@@ -219,8 +228,8 @@
 }
 
 .work-together__button {
-  margin-top: 32px;
-  width: 100px;
+  margin-top: 16px;
+  max-width: 100px;
   padding: 40px 32px 41px;
 
   border: none;
@@ -291,9 +300,19 @@
 }
 
 @media screen and (min-width: 768px) {
+  footer {
+    padding-top: 80px;
+  }
   .work-together {
-    background-image: url(../img/footer/footer-tablet.jpg);
-    padding: 80px 32px 69px;
+    background-image: url(../img/footer/footer-tablet.webp);
+  }
+  @supports (background-image: image-set(url('image.webp') 1x)) {
+    .work-together {
+      background-image: image-set(
+        url(../img/footer/footer-tablet.webp) type('image/webp'),
+        url(../img/footer/footer-tablet.jpg) type('image/jpeg')
+      );
+    }
   }
   .work-together__title {
     font-size: 64px;
@@ -310,7 +329,6 @@
     margin-bottom: 18px;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
     gap: 32px;
   }
   .work-together__input {
@@ -323,7 +341,7 @@
     top: 134%;
   }
   .work-together__button {
-    width: 150px;
+    max-width: 150px;
     margin: 0;
     padding: 65px 57px 66px;
   }
@@ -337,6 +355,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  footer {
+    padding-left: 132px;
+    padding-right: 132px;
+  }
   .modal {
     padding: 64px;
     width: 492px;
@@ -344,29 +366,24 @@
   }
 
   .work-together {
-    padding: 80px 201px 169px 196px;
     background-image: url(../img/footer/footer-desktop.jpg);
   }
 
-  .work-together__form {
-    width: 100%;
-    align-items: center;
-    gap: 32px;
-    /* justify-content: space-between; */
+  @supports (background-image: image-set(url('image.webp') 1x)) {
+    .work-together {
+      background-image: image-set(
+        url(../img/footer/footer-desktop.webp) type('image/webp'),
+        url(../img/footer/footer-desktop.jpg) type('image/jpeg')
+      );
+    }
   }
 
   .work-together__input {
     margin: 0;
     width: 390px;
-    flex-shrink: 0;
-    /* flex-grow: 1; Дозволяє інпутам розширюватись і займати доступний простір */
   }
 
   .work-together__button {
-    padding: 65px 57px 66px;
     margin-left: 54px;
-  }
-  .work-together__button {
-    flex-shrink: 0; /* Зменшення розміру кнопки при недостатньому місці */
   }
 }
