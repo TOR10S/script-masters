@@ -63,5 +63,8 @@ new Swiper('.swiper-reviews', {
       slidesPerView: 4,
       spaceBetween: 21,
     },
+    keyboard: {
+      enabled: true,
+    },
   },
 });
