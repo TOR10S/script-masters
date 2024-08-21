@@ -86,6 +86,13 @@
   height: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     padding: 64px;
