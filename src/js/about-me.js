@@ -5,10 +5,12 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 
-new Accordion('.about-info-list', {elementClass: 'info-item',
+const accordion = new Accordion('.about-info-list', {elementClass: 'info-item',
     triggerClass: 'info-icon-wrapper',
     panelClass: 'info-item-panel',
 })
+
+accordion.open(0)
 
 const nextBtn = document.querySelector('.about-button-next');
 

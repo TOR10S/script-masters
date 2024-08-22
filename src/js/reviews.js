@@ -50,6 +50,12 @@ new Swiper('.swiper-reviews', {
     prevEl: '.left-arrow',
   },
   spaceBetween: 20,
+  keyboard: {
+    enabled: true,
+  },
+  a11y: {
+    enabled: true,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -62,9 +68,6 @@ new Swiper('.swiper-reviews', {
     1440: {
       slidesPerView: 4,
       spaceBetween: 21,
-    },
-    keyboard: {
-      enabled: true,
     },
   },
 });
