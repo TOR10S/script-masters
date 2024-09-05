@@ -34,7 +34,6 @@
 .hero-item {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    padding: 10px 12px;
     width: 37px;
     height: 37px;
     display: flex;
@@ -53,6 +52,7 @@
 }
 
 .hero-link {
+    padding: 10px 12px;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
